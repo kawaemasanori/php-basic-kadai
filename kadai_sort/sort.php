@@ -13,10 +13,10 @@
         function narabikae($order){
           $nums = [15, 4, 18, 23, 10 ];
          
-          if($order === TRUE){
+          if($order === '昇順'){
             sort($nums);
             echo '昇順にソートします。<br>';
-            }else{
+            }else if($order === '降順'){
               rsort($nums);
               echo '降順にソートします。<br>';
             }
@@ -26,8 +26,8 @@
           
             
         }
-        narabikae(TRUE);
-        narabikae(FALSE);
+        narabikae('昇順');
+        narabikae('降順');
         ?>
     </p>
 </body>
